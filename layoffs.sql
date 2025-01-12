@@ -1,4 +1,5 @@
-Data set: https://github.com/AlexTheAnalyst/MySQL-YouTube-Series/blob/main/layoffs.csv
+/* Dataset:
+https://github.com/AlexTheAnalyst/MySQL-YouTube-Series/blob/main/layoffs.csv
 /*
 Cleaning Data in SQL Queries
 */
@@ -113,6 +114,6 @@ DROP column row_num;
 
 -- Ya tenemos nuestros datos limpios para empezar a trabajar con ellos
 
-SELECT * 
-FROM layoffs_staging_2;
+DROP TABLE layoffs_staging;
 
+ALTER TABLE layoffs_staging_2 RENAME TO layoffs_staging;
